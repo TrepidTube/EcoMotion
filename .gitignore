@@ -25,3 +25,8 @@ dist-ssr
 
 # Feeds generados por scripts/ (se publican en el servidor, no se versionan)
 public/data/
+
+# Caché de Python y archivos temporales de Office
+__pycache__/
+*.pyc
+~$*
