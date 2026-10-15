@@ -1,0 +1,88 @@
+:root {
+  /* Paleta inspirada en habitaOne: crema + tinta + oliva. La escala SIMA (--aq-*)
+     se reserva para estados de calidad del aire y no se usa como decoración. */
+  --olive-50: #f6f7f0;
+  --olive-100: #ebede0;
+  --olive-200: #d4d8b9;
+  --olive-300: #b3bb8a;
+  --olive-500: #6b7c3a;
+  --olive-600: #556134;
+  --olive-800: #353c25;
+  --olive-900: #2b3120;
+
+  --cream-50: #fbfaf6;
+  --cream-100: #f5f3eb;
+  --soft: #f8f7f1;
+
+  --ink: #1c1729;
+  --ink-2: #2a2440;
+  --ink-muted: #6b6280;
+  --line: rgba(28, 23, 41, 0.08);
+  --line-strong: rgba(28, 23, 41, 0.14);
+
+  --success: #3a8049;
+  --success-bg: #ecf6ee;
+  --warning: #c98a2b;
+  --warning-bg: #fdf5e6;
+  --danger: #c14747;
+  --danger-bg: #fbecec;
+  --info: #4a7aa6;
+
+  /* Índice AIRE y SALUD (SIMA / NOM-172-SEMARNAT-2023) */
+  --aq-none: #9aa5b1;
+  --aq-good: #00e400;
+  --aq-ok: #ffff00;
+  --aq-bad: #ff7e00;
+  --aq-verybad: #ff0000;
+  --aq-extreme: #8f3f97;
+
+  --r-md: 10px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-2xl: 22px;
+  --r-3xl: 28px;
+
+  --shadow-sm: 0 1px 2px rgba(28, 23, 41, 0.06), 0 1px 3px rgba(28, 23, 41, 0.04);
+  --shadow-md: 0 10px 30px -12px rgba(28, 23, 41, 0.18);
+  --shadow-lg: 0 24px 60px -20px rgba(28, 23, 41, 0.28);
+
+  font-family: "Plus Jakarta Sans", system-ui, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--cream-50);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--cream-50);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--olive-500);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  color: var(--ink);
+}
